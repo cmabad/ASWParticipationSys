@@ -1,0 +1,800 @@
+[2017-05-10 09:09:11,067] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 09:19:11,066] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 09:29:11,066] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 09:39:11,067] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 09:49:11,066] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:01:32,818] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delete.topic.enable = false
+	fetch.purgatory.purge.interval.requests = 1000
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 0.10.2-IV0
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,TRACE:TRACE,SASL_SSL:SASL_SSL,PLAINTEXT:PLAINTEXT
+	listeners = null
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 0.10.2-IV0
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 3
+	offsets.topic.segment.bytes = 104857600
+	port = 9092
+	principal.builder.class = class org.apache.kafka.common.security.auth.DefaultPrincipalBuilder
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	unclean.leader.election.enable = true
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2017-05-10 10:01:32,876] INFO starting (kafka.server.KafkaServer)
+[2017-05-10 10:01:32,878] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2017-05-10 10:01:33,086] INFO Cluster ID = BC4lSQdTRui8P1vBWOLOcg (kafka.server.KafkaServer)
+[2017-05-10 10:01:33,110] INFO [ThrottledRequestReaper-Fetch], Starting  (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-05-10 10:01:33,112] INFO [ThrottledRequestReaper-Produce], Starting  (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-05-10 10:01:33,192] INFO Loading logs. (kafka.log.LogManager)
+[2017-05-10 10:01:33,247] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\createdComment-0\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\createdComment-0\00000000000000000000.timeindex, C:\tmp\kafka-logs\createdComment-0\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,272] INFO Recovering unflushed segment 0 in log createdComment-0. (kafka.log.Log)
+[2017-05-10 10:01:33,288] INFO Completed load of log createdComment-0 with 1 log segments and log end offset 0 in 67 ms (kafka.log.Log)
+[2017-05-10 10:01:33,306] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\createdProposal-0\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\createdProposal-0\00000000000000000000.timeindex, C:\tmp\kafka-logs\createdProposal-0\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,326] INFO Recovering unflushed segment 0 in log createdProposal-0. (kafka.log.Log)
+[2017-05-10 10:01:33,341] INFO Completed load of log createdProposal-0 with 1 log segments and log end offset 13 in 47 ms (kafka.log.Log)
+[2017-05-10 10:01:33,357] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\deletedProposal-0\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\deletedProposal-0\00000000000000000000.timeindex, C:\tmp\kafka-logs\deletedProposal-0\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,371] INFO Recovering unflushed segment 0 in log deletedProposal-0. (kafka.log.Log)
+[2017-05-10 10:01:33,384] INFO Completed load of log deletedProposal-0 with 1 log segments and log end offset 0 in 41 ms (kafka.log.Log)
+[2017-05-10 10:01:33,400] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\springCloudBusInput-0\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\springCloudBusInput-0\00000000000000000000.timeindex, C:\tmp\kafka-logs\springCloudBusInput-0\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,417] INFO Recovering unflushed segment 0 in log springCloudBusInput-0. (kafka.log.Log)
+[2017-05-10 10:01:33,430] INFO Completed load of log springCloudBusInput-0 with 1 log segments and log end offset 0 in 42 ms (kafka.log.Log)
+[2017-05-10 10:01:33,446] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\springCloudBusOutput-0\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\springCloudBusOutput-0\00000000000000000000.timeindex, C:\tmp\kafka-logs\springCloudBusOutput-0\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,459] INFO Recovering unflushed segment 0 in log springCloudBusOutput-0. (kafka.log.Log)
+[2017-05-10 10:01:33,472] INFO Completed load of log springCloudBusOutput-0 with 1 log segments and log end offset 0 in 39 ms (kafka.log.Log)
+[2017-05-10 10:01:33,487] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\votedComment-0\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\votedComment-0\00000000000000000000.timeindex, C:\tmp\kafka-logs\votedComment-0\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,518] INFO Recovering unflushed segment 0 in log votedComment-0. (kafka.log.Log)
+[2017-05-10 10:01:33,544] INFO Completed load of log votedComment-0 with 1 log segments and log end offset 504 in 69 ms (kafka.log.Log)
+[2017-05-10 10:01:33,559] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\votedProposal-0\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\votedProposal-0\00000000000000000000.timeindex, C:\tmp\kafka-logs\votedProposal-0\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,582] INFO Recovering unflushed segment 0 in log votedProposal-0. (kafka.log.Log)
+[2017-05-10 10:01:33,619] INFO Completed load of log votedProposal-0 with 1 log segments and log end offset 880 in 72 ms (kafka.log.Log)
+[2017-05-10 10:01:33,635] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-0\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-0\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-0\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,648] INFO Recovering unflushed segment 0 in log __consumer_offsets-0. (kafka.log.Log)
+[2017-05-10 10:01:33,665] INFO Completed load of log __consumer_offsets-0 with 1 log segments and log end offset 3 in 43 ms (kafka.log.Log)
+[2017-05-10 10:01:33,683] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-1\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-1\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-1\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,695] INFO Recovering unflushed segment 0 in log __consumer_offsets-1. (kafka.log.Log)
+[2017-05-10 10:01:33,712] INFO Completed load of log __consumer_offsets-1 with 1 log segments and log end offset 6 in 44 ms (kafka.log.Log)
+[2017-05-10 10:01:33,727] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-10\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-10\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-10\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,739] INFO Recovering unflushed segment 0 in log __consumer_offsets-10. (kafka.log.Log)
+[2017-05-10 10:01:33,752] INFO Completed load of log __consumer_offsets-10 with 1 log segments and log end offset 0 in 37 ms (kafka.log.Log)
+[2017-05-10 10:01:33,766] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-11\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-11\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-11\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,779] INFO Recovering unflushed segment 0 in log __consumer_offsets-11. (kafka.log.Log)
+[2017-05-10 10:01:33,794] INFO Completed load of log __consumer_offsets-11 with 1 log segments and log end offset 9 in 40 ms (kafka.log.Log)
+[2017-05-10 10:01:33,810] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-12\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-12\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-12\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,821] INFO Recovering unflushed segment 0 in log __consumer_offsets-12. (kafka.log.Log)
+[2017-05-10 10:01:33,836] INFO Completed load of log __consumer_offsets-12 with 1 log segments and log end offset 6 in 40 ms (kafka.log.Log)
+[2017-05-10 10:01:33,853] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-13\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-13\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-13\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,866] INFO Recovering unflushed segment 0 in log __consumer_offsets-13. (kafka.log.Log)
+[2017-05-10 10:01:33,882] INFO Completed load of log __consumer_offsets-13 with 1 log segments and log end offset 3 in 44 ms (kafka.log.Log)
+[2017-05-10 10:01:33,898] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-14\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-14\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-14\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,914] INFO Recovering unflushed segment 0 in log __consumer_offsets-14. (kafka.log.Log)
+[2017-05-10 10:01:33,928] INFO Completed load of log __consumer_offsets-14 with 1 log segments and log end offset 0 in 44 ms (kafka.log.Log)
+[2017-05-10 10:01:33,943] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-15\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-15\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-15\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,956] INFO Recovering unflushed segment 0 in log __consumer_offsets-15. (kafka.log.Log)
+[2017-05-10 10:01:33,968] INFO Completed load of log __consumer_offsets-15 with 1 log segments and log end offset 0 in 38 ms (kafka.log.Log)
+[2017-05-10 10:01:33,984] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-16\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-16\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-16\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:33,997] INFO Recovering unflushed segment 0 in log __consumer_offsets-16. (kafka.log.Log)
+[2017-05-10 10:01:34,012] INFO Completed load of log __consumer_offsets-16 with 1 log segments and log end offset 0 in 41 ms (kafka.log.Log)
+[2017-05-10 10:01:34,027] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-17\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-17\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-17\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,039] INFO Recovering unflushed segment 0 in log __consumer_offsets-17. (kafka.log.Log)
+[2017-05-10 10:01:34,053] INFO Completed load of log __consumer_offsets-17 with 1 log segments and log end offset 0 in 38 ms (kafka.log.Log)
+[2017-05-10 10:01:34,069] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-18\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-18\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-18\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,083] INFO Recovering unflushed segment 0 in log __consumer_offsets-18. (kafka.log.Log)
+[2017-05-10 10:01:34,097] INFO Completed load of log __consumer_offsets-18 with 1 log segments and log end offset 0 in 41 ms (kafka.log.Log)
+[2017-05-10 10:01:34,111] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-19\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-19\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-19\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,123] INFO Recovering unflushed segment 0 in log __consumer_offsets-19. (kafka.log.Log)
+[2017-05-10 10:01:34,138] INFO Completed load of log __consumer_offsets-19 with 1 log segments and log end offset 3 in 40 ms (kafka.log.Log)
+[2017-05-10 10:01:34,153] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-2\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-2\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-2\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,166] INFO Recovering unflushed segment 0 in log __consumer_offsets-2. (kafka.log.Log)
+[2017-05-10 10:01:34,179] INFO Completed load of log __consumer_offsets-2 with 1 log segments and log end offset 0 in 39 ms (kafka.log.Log)
+[2017-05-10 10:01:34,195] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-20\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-20\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-20\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,210] INFO Recovering unflushed segment 0 in log __consumer_offsets-20. (kafka.log.Log)
+[2017-05-10 10:01:34,223] INFO Completed load of log __consumer_offsets-20 with 1 log segments and log end offset 0 in 42 ms (kafka.log.Log)
+[2017-05-10 10:01:34,238] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-21\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-21\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-21\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,251] INFO Recovering unflushed segment 0 in log __consumer_offsets-21. (kafka.log.Log)
+[2017-05-10 10:01:34,264] INFO Completed load of log __consumer_offsets-21 with 1 log segments and log end offset 0 in 38 ms (kafka.log.Log)
+[2017-05-10 10:01:34,278] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-22\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-22\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-22\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,290] INFO Recovering unflushed segment 0 in log __consumer_offsets-22. (kafka.log.Log)
+[2017-05-10 10:01:34,302] INFO Completed load of log __consumer_offsets-22 with 1 log segments and log end offset 0 in 37 ms (kafka.log.Log)
+[2017-05-10 10:01:34,317] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-23\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-23\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-23\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,328] INFO Recovering unflushed segment 0 in log __consumer_offsets-23. (kafka.log.Log)
+[2017-05-10 10:01:34,343] INFO Completed load of log __consumer_offsets-23 with 1 log segments and log end offset 3 in 39 ms (kafka.log.Log)
+[2017-05-10 10:01:34,358] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-24\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-24\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-24\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,370] INFO Recovering unflushed segment 0 in log __consumer_offsets-24. (kafka.log.Log)
+[2017-05-10 10:01:34,385] INFO Completed load of log __consumer_offsets-24 with 1 log segments and log end offset 12 in 40 ms (kafka.log.Log)
+[2017-05-10 10:01:34,399] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-25\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-25\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-25\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,412] INFO Recovering unflushed segment 0 in log __consumer_offsets-25. (kafka.log.Log)
+[2017-05-10 10:01:34,426] INFO Completed load of log __consumer_offsets-25 with 1 log segments and log end offset 0 in 39 ms (kafka.log.Log)
+[2017-05-10 10:01:34,440] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-26\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-26\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-26\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,452] INFO Recovering unflushed segment 0 in log __consumer_offsets-26. (kafka.log.Log)
+[2017-05-10 10:01:34,466] INFO Completed load of log __consumer_offsets-26 with 1 log segments and log end offset 3 in 39 ms (kafka.log.Log)
+[2017-05-10 10:01:34,481] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-27\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-27\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-27\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,492] INFO Recovering unflushed segment 0 in log __consumer_offsets-27. (kafka.log.Log)
+[2017-05-10 10:01:34,508] INFO Completed load of log __consumer_offsets-27 with 1 log segments and log end offset 3 in 39 ms (kafka.log.Log)
+[2017-05-10 10:01:34,522] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-28\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-28\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-28\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,535] INFO Recovering unflushed segment 0 in log __consumer_offsets-28. (kafka.log.Log)
+[2017-05-10 10:01:34,550] INFO Completed load of log __consumer_offsets-28 with 1 log segments and log end offset 3 in 41 ms (kafka.log.Log)
+[2017-05-10 10:01:34,566] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-29\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-29\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-29\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,578] INFO Recovering unflushed segment 0 in log __consumer_offsets-29. (kafka.log.Log)
+[2017-05-10 10:01:34,591] INFO Completed load of log __consumer_offsets-29 with 1 log segments and log end offset 0 in 38 ms (kafka.log.Log)
+[2017-05-10 10:01:34,607] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-3\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-3\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-3\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,620] INFO Recovering unflushed segment 0 in log __consumer_offsets-3. (kafka.log.Log)
+[2017-05-10 10:01:34,633] INFO Completed load of log __consumer_offsets-3 with 1 log segments and log end offset 0 in 41 ms (kafka.log.Log)
+[2017-05-10 10:01:34,649] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-30\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-30\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-30\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,660] INFO Recovering unflushed segment 0 in log __consumer_offsets-30. (kafka.log.Log)
+[2017-05-10 10:01:34,675] INFO Completed load of log __consumer_offsets-30 with 1 log segments and log end offset 3 in 40 ms (kafka.log.Log)
+[2017-05-10 10:01:34,690] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-31\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-31\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-31\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,703] INFO Recovering unflushed segment 0 in log __consumer_offsets-31. (kafka.log.Log)
+[2017-05-10 10:01:34,716] INFO Completed load of log __consumer_offsets-31 with 1 log segments and log end offset 0 in 39 ms (kafka.log.Log)
+[2017-05-10 10:01:34,730] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-32\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-32\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-32\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,741] INFO Recovering unflushed segment 0 in log __consumer_offsets-32. (kafka.log.Log)
+[2017-05-10 10:01:34,756] INFO Completed load of log __consumer_offsets-32 with 1 log segments and log end offset 3 in 38 ms (kafka.log.Log)
+[2017-05-10 10:01:34,772] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-33\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-33\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-33\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,784] INFO Recovering unflushed segment 0 in log __consumer_offsets-33. (kafka.log.Log)
+[2017-05-10 10:01:34,800] INFO Completed load of log __consumer_offsets-33 with 1 log segments and log end offset 3 in 43 ms (kafka.log.Log)
+[2017-05-10 10:01:34,819] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-34\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-34\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-34\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,842] INFO Recovering unflushed segment 0 in log __consumer_offsets-34. (kafka.log.Log)
+[2017-05-10 10:01:34,865] INFO Completed load of log __consumer_offsets-34 with 1 log segments and log end offset 3 in 63 ms (kafka.log.Log)
+[2017-05-10 10:01:34,884] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-35\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-35\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-35\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,899] INFO Recovering unflushed segment 0 in log __consumer_offsets-35. (kafka.log.Log)
+[2017-05-10 10:01:34,913] INFO Completed load of log __consumer_offsets-35 with 1 log segments and log end offset 0 in 45 ms (kafka.log.Log)
+[2017-05-10 10:01:34,928] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-36\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-36\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-36\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,941] INFO Recovering unflushed segment 0 in log __consumer_offsets-36. (kafka.log.Log)
+[2017-05-10 10:01:34,959] INFO Completed load of log __consumer_offsets-36 with 1 log segments and log end offset 3 in 44 ms (kafka.log.Log)
+[2017-05-10 10:01:34,975] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-37\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-37\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-37\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:34,989] INFO Recovering unflushed segment 0 in log __consumer_offsets-37. (kafka.log.Log)
+[2017-05-10 10:01:35,004] INFO Completed load of log __consumer_offsets-37 with 1 log segments and log end offset 0 in 43 ms (kafka.log.Log)
+[2017-05-10 10:01:35,020] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-38\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-38\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-38\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,040] INFO Recovering unflushed segment 0 in log __consumer_offsets-38. (kafka.log.Log)
+[2017-05-10 10:01:35,058] INFO Completed load of log __consumer_offsets-38 with 1 log segments and log end offset 0 in 52 ms (kafka.log.Log)
+[2017-05-10 10:01:35,076] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-39\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-39\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-39\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,093] INFO Recovering unflushed segment 0 in log __consumer_offsets-39. (kafka.log.Log)
+[2017-05-10 10:01:35,110] INFO Completed load of log __consumer_offsets-39 with 1 log segments and log end offset 0 in 51 ms (kafka.log.Log)
+[2017-05-10 10:01:35,129] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-4\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-4\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-4\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,145] INFO Recovering unflushed segment 0 in log __consumer_offsets-4. (kafka.log.Log)
+[2017-05-10 10:01:35,162] INFO Completed load of log __consumer_offsets-4 with 1 log segments and log end offset 0 in 49 ms (kafka.log.Log)
+[2017-05-10 10:01:35,179] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-40\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-40\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-40\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,193] INFO Recovering unflushed segment 0 in log __consumer_offsets-40. (kafka.log.Log)
+[2017-05-10 10:01:35,208] INFO Completed load of log __consumer_offsets-40 with 1 log segments and log end offset 0 in 44 ms (kafka.log.Log)
+[2017-05-10 10:01:35,224] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-41\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-41\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-41\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,240] INFO Recovering unflushed segment 0 in log __consumer_offsets-41. (kafka.log.Log)
+[2017-05-10 10:01:35,254] INFO Completed load of log __consumer_offsets-41 with 1 log segments and log end offset 0 in 45 ms (kafka.log.Log)
+[2017-05-10 10:01:35,269] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-42\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-42\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-42\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,283] INFO Recovering unflushed segment 0 in log __consumer_offsets-42. (kafka.log.Log)
+[2017-05-10 10:01:35,297] INFO Completed load of log __consumer_offsets-42 with 1 log segments and log end offset 0 in 40 ms (kafka.log.Log)
+[2017-05-10 10:01:35,314] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-43\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-43\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-43\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,327] INFO Recovering unflushed segment 0 in log __consumer_offsets-43. (kafka.log.Log)
+[2017-05-10 10:01:35,344] INFO Completed load of log __consumer_offsets-43 with 1 log segments and log end offset 3 in 44 ms (kafka.log.Log)
+[2017-05-10 10:01:35,359] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-44\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-44\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-44\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,373] INFO Recovering unflushed segment 0 in log __consumer_offsets-44. (kafka.log.Log)
+[2017-05-10 10:01:35,386] INFO Completed load of log __consumer_offsets-44 with 1 log segments and log end offset 0 in 41 ms (kafka.log.Log)
+[2017-05-10 10:01:35,404] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-45\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-45\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-45\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,417] INFO Recovering unflushed segment 0 in log __consumer_offsets-45. (kafka.log.Log)
+[2017-05-10 10:01:35,434] INFO Completed load of log __consumer_offsets-45 with 1 log segments and log end offset 3 in 46 ms (kafka.log.Log)
+[2017-05-10 10:01:35,452] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-46\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-46\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-46\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,465] INFO Recovering unflushed segment 0 in log __consumer_offsets-46. (kafka.log.Log)
+[2017-05-10 10:01:35,478] INFO Completed load of log __consumer_offsets-46 with 1 log segments and log end offset 0 in 41 ms (kafka.log.Log)
+[2017-05-10 10:01:35,493] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-47\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-47\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-47\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,505] INFO Recovering unflushed segment 0 in log __consumer_offsets-47. (kafka.log.Log)
+[2017-05-10 10:01:35,521] INFO Completed load of log __consumer_offsets-47 with 1 log segments and log end offset 3 in 41 ms (kafka.log.Log)
+[2017-05-10 10:01:35,537] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-48\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-48\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-48\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,626] INFO Recovering unflushed segment 0 in log __consumer_offsets-48. (kafka.log.Log)
+[2017-05-10 10:01:35,709] INFO Completed load of log __consumer_offsets-48 with 1 log segments and log end offset 5123 in 187 ms (kafka.log.Log)
+[2017-05-10 10:01:35,730] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-49\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-49\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-49\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,756] INFO Recovering unflushed segment 0 in log __consumer_offsets-49. (kafka.log.Log)
+[2017-05-10 10:01:35,780] INFO Completed load of log __consumer_offsets-49 with 1 log segments and log end offset 3 in 68 ms (kafka.log.Log)
+[2017-05-10 10:01:35,796] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-5\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-5\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-5\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,810] INFO Recovering unflushed segment 0 in log __consumer_offsets-5. (kafka.log.Log)
+[2017-05-10 10:01:35,824] INFO Completed load of log __consumer_offsets-5 with 1 log segments and log end offset 0 in 42 ms (kafka.log.Log)
+[2017-05-10 10:01:35,842] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-6\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-6\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-6\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,855] INFO Recovering unflushed segment 0 in log __consumer_offsets-6. (kafka.log.Log)
+[2017-05-10 10:01:35,868] INFO Completed load of log __consumer_offsets-6 with 1 log segments and log end offset 0 in 42 ms (kafka.log.Log)
+[2017-05-10 10:01:35,883] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-7\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-7\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-7\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,896] INFO Recovering unflushed segment 0 in log __consumer_offsets-7. (kafka.log.Log)
+[2017-05-10 10:01:35,909] INFO Completed load of log __consumer_offsets-7 with 1 log segments and log end offset 0 in 40 ms (kafka.log.Log)
+[2017-05-10 10:01:35,924] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-8\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-8\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-8\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,936] INFO Recovering unflushed segment 0 in log __consumer_offsets-8. (kafka.log.Log)
+[2017-05-10 10:01:35,951] INFO Completed load of log __consumer_offsets-8 with 1 log segments and log end offset 0 in 41 ms (kafka.log.Log)
+[2017-05-10 10:01:35,967] WARN Found a corrupted index file due to requirement failed: Corrupt index found, index file (C:\tmp\kafka-logs\__consumer_offsets-9\00000000000000000000.index) has non-zero size but the last offset is 0 which is no larger than the base offset 0.}. deleting C:\tmp\kafka-logs\__consumer_offsets-9\00000000000000000000.timeindex, C:\tmp\kafka-logs\__consumer_offsets-9\00000000000000000000.index and rebuilding index... (kafka.log.Log)
+[2017-05-10 10:01:35,979] INFO Recovering unflushed segment 0 in log __consumer_offsets-9. (kafka.log.Log)
+[2017-05-10 10:01:35,995] INFO Completed load of log __consumer_offsets-9 with 1 log segments and log end offset 3 in 41 ms (kafka.log.Log)
+[2017-05-10 10:01:35,998] INFO Logs loading complete in 2805 ms. (kafka.log.LogManager)
+[2017-05-10 10:01:36,086] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2017-05-10 10:01:36,091] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2017-05-10 10:01:36,135] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[2017-05-10 10:01:36,138] INFO [Socket Server on Broker 0], Started 1 acceptor threads (kafka.network.SocketServer)
+[2017-05-10 10:01:36,157] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:36,159] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:36,196] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:36,198] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:36,199] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:36,262] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:01:36,264] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:01:36,286] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 2 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:01:36,290] INFO Will not load MX4J, mx4j-tools.jar is not in the classpath (kafka.utils.Mx4jLoader$)
+[2017-05-10 10:01:36,382] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-05-10 10:01:36,404] INFO Result of znode creation is: NODEEXISTS (kafka.utils.ZKCheckedEphemeral)
+[2017-05-10 10:01:36,408] FATAL [Kafka Server 0], Fatal error during KafkaServer startup. Prepare to shutdown (kafka.server.KafkaServer)
+java.lang.RuntimeException: A broker is already registered on the path /brokers/ids/0. This probably indicates that you either have configured a brokerid that is already in use, or else you have shutdown this broker and restarted it faster than the zookeeper timeout so it appears to be re-registering.
+	at kafka.utils.ZkUtils.registerBrokerInZk(ZkUtils.scala:375)
+	at kafka.utils.ZkUtils.registerBrokerInZk(ZkUtils.scala:361)
+	at kafka.server.KafkaHealthcheck.register(KafkaHealthcheck.scala:71)
+	at kafka.server.KafkaHealthcheck.startup(KafkaHealthcheck.scala:51)
+	at kafka.server.KafkaServer.startup(KafkaServer.scala:269)
+	at kafka.server.KafkaServerStartable.startup(KafkaServerStartable.scala:39)
+	at kafka.Kafka$.main(Kafka.scala:67)
+	at kafka.Kafka.main(Kafka.scala)
+[2017-05-10 10:01:36,412] INFO [Kafka Server 0], shutting down (kafka.server.KafkaServer)
+[2017-05-10 10:01:36,414] INFO [Socket Server on Broker 0], Shutting down (kafka.network.SocketServer)
+[2017-05-10 10:01:36,427] INFO [Socket Server on Broker 0], Shutdown completed (kafka.network.SocketServer)
+[2017-05-10 10:01:36,431] INFO [Kafka Request Handler on Broker 0], shutting down (kafka.server.KafkaRequestHandlerPool)
+[2017-05-10 10:01:36,477] INFO [Kafka Request Handler on Broker 0], shut down completely (kafka.server.KafkaRequestHandlerPool)
+[2017-05-10 10:01:36,484] INFO [ThrottledRequestReaper-Fetch], Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-05-10 10:01:37,117] INFO [ThrottledRequestReaper-Fetch], Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-05-10 10:01:37,117] INFO [ThrottledRequestReaper-Fetch], Stopped  (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-05-10 10:01:37,117] INFO [ThrottledRequestReaper-Produce], Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-05-10 10:01:37,122] INFO [ThrottledRequestReaper-Produce], Stopped  (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-05-10 10:01:37,122] INFO [ThrottledRequestReaper-Produce], Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-05-10 10:01:37,123] INFO [KafkaApi-0] Shutdown complete. (kafka.server.KafkaApis)
+[2017-05-10 10:01:37,124] INFO [Replica Manager on Broker 0]: Shutting down (kafka.server.ReplicaManager)
+[2017-05-10 10:01:37,125] INFO [ReplicaFetcherManager on broker 0] shutting down (kafka.server.ReplicaFetcherManager)
+[2017-05-10 10:01:37,127] INFO [ReplicaFetcherManager on broker 0] shutdown completed (kafka.server.ReplicaFetcherManager)
+[2017-05-10 10:01:37,127] INFO [ExpirationReaper-0], Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,164] INFO [ExpirationReaper-0], Stopped  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,164] INFO [ExpirationReaper-0], Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,166] INFO [ExpirationReaper-0], Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,359] INFO [ExpirationReaper-0], Stopped  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,359] INFO [ExpirationReaper-0], Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,364] INFO [Replica Manager on Broker 0]: Shut down completely (kafka.server.ReplicaManager)
+[2017-05-10 10:01:37,365] INFO [ExpirationReaper-0], Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,403] INFO [ExpirationReaper-0], Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,403] INFO [ExpirationReaper-0], Stopped  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,406] INFO [GroupCoordinator 0]: Shutting down. (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:01:37,407] INFO [ExpirationReaper-0], Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,602] INFO [ExpirationReaper-0], Stopped  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,602] INFO [ExpirationReaper-0], Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,604] INFO [ExpirationReaper-0], Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,802] INFO [ExpirationReaper-0], Stopped  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,802] INFO [ExpirationReaper-0], Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:01:37,804] INFO [GroupCoordinator 0]: Shutdown complete. (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:01:37,805] INFO Shutting down. (kafka.log.LogManager)
+[2017-05-10 10:01:38,470] INFO Shutdown complete. (kafka.log.LogManager)
+[2017-05-10 10:01:38,489] INFO [Kafka Server 0], shut down completed (kafka.server.KafkaServer)
+[2017-05-10 10:01:38,490] FATAL Fatal error during KafkaServerStartable startup. Prepare to shutdown (kafka.server.KafkaServerStartable)
+java.lang.RuntimeException: A broker is already registered on the path /brokers/ids/0. This probably indicates that you either have configured a brokerid that is already in use, or else you have shutdown this broker and restarted it faster than the zookeeper timeout so it appears to be re-registering.
+	at kafka.utils.ZkUtils.registerBrokerInZk(ZkUtils.scala:375)
+	at kafka.utils.ZkUtils.registerBrokerInZk(ZkUtils.scala:361)
+	at kafka.server.KafkaHealthcheck.register(KafkaHealthcheck.scala:71)
+	at kafka.server.KafkaHealthcheck.startup(KafkaHealthcheck.scala:51)
+	at kafka.server.KafkaServer.startup(KafkaServer.scala:269)
+	at kafka.server.KafkaServerStartable.startup(KafkaServerStartable.scala:39)
+	at kafka.Kafka$.main(Kafka.scala:67)
+	at kafka.Kafka.main(Kafka.scala)
+[2017-05-10 10:01:38,496] INFO [Kafka Server 0], shutting down (kafka.server.KafkaServer)
+[2017-05-10 10:02:07,788] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delete.topic.enable = false
+	fetch.purgatory.purge.interval.requests = 1000
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 0.10.2-IV0
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,TRACE:TRACE,SASL_SSL:SASL_SSL,PLAINTEXT:PLAINTEXT
+	listeners = null
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 0.10.2-IV0
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 3
+	offsets.topic.segment.bytes = 104857600
+	port = 9092
+	principal.builder.class = class org.apache.kafka.common.security.auth.DefaultPrincipalBuilder
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	unclean.leader.election.enable = true
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2017-05-10 10:02:07,844] INFO starting (kafka.server.KafkaServer)
+[2017-05-10 10:02:07,846] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2017-05-10 10:02:08,055] INFO Cluster ID = BC4lSQdTRui8P1vBWOLOcg (kafka.server.KafkaServer)
+[2017-05-10 10:02:08,080] INFO [ThrottledRequestReaper-Fetch], Starting  (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-05-10 10:02:08,082] INFO [ThrottledRequestReaper-Produce], Starting  (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-05-10 10:02:08,158] INFO Loading logs. (kafka.log.LogManager)
+[2017-05-10 10:02:08,209] INFO Completed load of log createdComment-0 with 1 log segments and log end offset 0 in 27 ms (kafka.log.Log)
+[2017-05-10 10:02:08,221] INFO Completed load of log createdProposal-0 with 1 log segments and log end offset 13 in 7 ms (kafka.log.Log)
+[2017-05-10 10:02:08,227] INFO Completed load of log deletedProposal-0 with 1 log segments and log end offset 0 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,234] INFO Completed load of log springCloudBusInput-0 with 1 log segments and log end offset 0 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,239] INFO Completed load of log springCloudBusOutput-0 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,247] INFO Completed load of log votedComment-0 with 1 log segments and log end offset 504 in 6 ms (kafka.log.Log)
+[2017-05-10 10:02:08,256] INFO Completed load of log votedProposal-0 with 1 log segments and log end offset 880 in 7 ms (kafka.log.Log)
+[2017-05-10 10:02:08,263] INFO Completed load of log __consumer_offsets-0 with 1 log segments and log end offset 3 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,269] INFO Completed load of log __consumer_offsets-1 with 1 log segments and log end offset 6 in 5 ms (kafka.log.Log)
+[2017-05-10 10:02:08,276] INFO Completed load of log __consumer_offsets-10 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,285] INFO Completed load of log __consumer_offsets-11 with 1 log segments and log end offset 9 in 7 ms (kafka.log.Log)
+[2017-05-10 10:02:08,292] INFO Completed load of log __consumer_offsets-12 with 1 log segments and log end offset 6 in 5 ms (kafka.log.Log)
+[2017-05-10 10:02:08,298] INFO Completed load of log __consumer_offsets-13 with 1 log segments and log end offset 3 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,303] INFO Completed load of log __consumer_offsets-14 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,308] INFO Completed load of log __consumer_offsets-15 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,314] INFO Completed load of log __consumer_offsets-16 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,320] INFO Completed load of log __consumer_offsets-17 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,327] INFO Completed load of log __consumer_offsets-18 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,333] INFO Completed load of log __consumer_offsets-19 with 1 log segments and log end offset 3 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,340] INFO Completed load of log __consumer_offsets-2 with 1 log segments and log end offset 0 in 5 ms (kafka.log.Log)
+[2017-05-10 10:02:08,347] INFO Completed load of log __consumer_offsets-20 with 1 log segments and log end offset 0 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,356] INFO Completed load of log __consumer_offsets-21 with 1 log segments and log end offset 0 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,361] INFO Completed load of log __consumer_offsets-22 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,367] INFO Completed load of log __consumer_offsets-23 with 1 log segments and log end offset 3 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,375] INFO Completed load of log __consumer_offsets-24 with 1 log segments and log end offset 12 in 6 ms (kafka.log.Log)
+[2017-05-10 10:02:08,381] INFO Completed load of log __consumer_offsets-25 with 1 log segments and log end offset 0 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,386] INFO Completed load of log __consumer_offsets-26 with 1 log segments and log end offset 3 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,396] INFO Completed load of log __consumer_offsets-27 with 1 log segments and log end offset 3 in 7 ms (kafka.log.Log)
+[2017-05-10 10:02:08,402] INFO Completed load of log __consumer_offsets-28 with 1 log segments and log end offset 3 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,407] INFO Completed load of log __consumer_offsets-29 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,412] INFO Completed load of log __consumer_offsets-3 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,419] INFO Completed load of log __consumer_offsets-30 with 1 log segments and log end offset 3 in 5 ms (kafka.log.Log)
+[2017-05-10 10:02:08,424] INFO Completed load of log __consumer_offsets-31 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,430] INFO Completed load of log __consumer_offsets-32 with 1 log segments and log end offset 3 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,435] INFO Completed load of log __consumer_offsets-33 with 1 log segments and log end offset 3 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,441] INFO Completed load of log __consumer_offsets-34 with 1 log segments and log end offset 3 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,444] INFO Completed load of log __consumer_offsets-35 with 1 log segments and log end offset 0 in 2 ms (kafka.log.Log)
+[2017-05-10 10:02:08,450] INFO Completed load of log __consumer_offsets-36 with 1 log segments and log end offset 3 in 5 ms (kafka.log.Log)
+[2017-05-10 10:02:08,455] INFO Completed load of log __consumer_offsets-37 with 1 log segments and log end offset 0 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,461] INFO Completed load of log __consumer_offsets-38 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,466] INFO Completed load of log __consumer_offsets-39 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,473] INFO Completed load of log __consumer_offsets-4 with 1 log segments and log end offset 0 in 5 ms (kafka.log.Log)
+[2017-05-10 10:02:08,480] INFO Completed load of log __consumer_offsets-40 with 1 log segments and log end offset 0 in 5 ms (kafka.log.Log)
+[2017-05-10 10:02:08,485] INFO Completed load of log __consumer_offsets-41 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,491] INFO Completed load of log __consumer_offsets-42 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,498] INFO Completed load of log __consumer_offsets-43 with 1 log segments and log end offset 3 in 6 ms (kafka.log.Log)
+[2017-05-10 10:02:08,503] INFO Completed load of log __consumer_offsets-44 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,510] INFO Completed load of log __consumer_offsets-45 with 1 log segments and log end offset 3 in 5 ms (kafka.log.Log)
+[2017-05-10 10:02:08,515] INFO Completed load of log __consumer_offsets-46 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,522] INFO Completed load of log __consumer_offsets-47 with 1 log segments and log end offset 3 in 5 ms (kafka.log.Log)
+[2017-05-10 10:02:08,530] INFO Completed load of log __consumer_offsets-48 with 1 log segments and log end offset 5123 in 7 ms (kafka.log.Log)
+[2017-05-10 10:02:08,541] INFO Completed load of log __consumer_offsets-49 with 1 log segments and log end offset 3 in 10 ms (kafka.log.Log)
+[2017-05-10 10:02:08,545] INFO Completed load of log __consumer_offsets-5 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,552] INFO Completed load of log __consumer_offsets-6 with 1 log segments and log end offset 0 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,558] INFO Completed load of log __consumer_offsets-7 with 1 log segments and log end offset 0 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,563] INFO Completed load of log __consumer_offsets-8 with 1 log segments and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-05-10 10:02:08,569] INFO Completed load of log __consumer_offsets-9 with 1 log segments and log end offset 3 in 4 ms (kafka.log.Log)
+[2017-05-10 10:02:08,574] INFO Logs loading complete in 415 ms. (kafka.log.LogManager)
+[2017-05-10 10:02:08,642] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2017-05-10 10:02:08,645] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2017-05-10 10:02:08,691] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[2017-05-10 10:02:08,695] INFO [Socket Server on Broker 0], Started 1 acceptor threads (kafka.network.SocketServer)
+[2017-05-10 10:02:08,714] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:02:08,716] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:02:08,763] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-05-10 10:02:08,783] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-05-10 10:02:08,784] INFO 0 successfully elected as leader (kafka.server.ZookeeperLeaderElector)
+[2017-05-10 10:02:09,581] INFO New leader is 0 (kafka.server.ZookeeperLeaderElector$LeaderChangeListener)
+[2017-05-10 10:02:09,583] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:02:09,586] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:02:09,587] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-05-10 10:02:09,617] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:09,618] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:09,620] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:09,638] INFO Will not load MX4J, mx4j-tools.jar is not in the classpath (kafka.utils.Mx4jLoader$)
+[2017-05-10 10:02:09,728] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-05-10 10:02:09,739] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-05-10 10:02:09,749] INFO Registered broker 0 at path /brokers/ids/0 with addresses: EndPoint(DESKTOP-SIN1USI,9092,ListenerName(PLAINTEXT),PLAINTEXT) (kafka.utils.ZkUtils)
+[2017-05-10 10:02:09,815] INFO [Kafka Server 0], started (kafka.server.KafkaServer)
+[2017-05-10 10:02:10,017] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions __consumer_offsets-22,votedComment-0,springCloudBusOutput-0,__consumer_offsets-30,__consumer_offsets-8,__consumer_offsets-21,__consumer_offsets-4,__consumer_offsets-27,__consumer_offsets-7,__consumer_offsets-9,__consumer_offsets-46,__consumer_offsets-25,__consumer_offsets-35,__consumer_offsets-41,__consumer_offsets-33,__consumer_offsets-23,__consumer_offsets-49,__consumer_offsets-47,__consumer_offsets-16,__consumer_offsets-28,__consumer_offsets-31,__consumer_offsets-36,__consumer_offsets-42,__consumer_offsets-3,__consumer_offsets-18,createdProposal-0,__consumer_offsets-37,__consumer_offsets-15,__consumer_offsets-24,createdComment-0,__consumer_offsets-38,__consumer_offsets-17,__consumer_offsets-48,__consumer_offsets-19,__consumer_offsets-11,__consumer_offsets-13,__consumer_offsets-2,__consumer_offsets-43,__consumer_offsets-6,__consumer_offsets-14,__consumer_offsets-20,__consumer_offsets-0,__consumer_offsets-44,deletedProposal-0,__consumer_offsets-39,__consumer_offsets-12,__consumer_offsets-45,__consumer_offsets-1,__consumer_offsets-5,__consumer_offsets-26,springCloudBusInput-0,__consumer_offsets-29,__consumer_offsets-34,__consumer_offsets-10,votedProposal-0,__consumer_offsets-32,__consumer_offsets-40 (kafka.server.ReplicaFetcherManager)
+[2017-05-10 10:02:10,428] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-25 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,456] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-25 in 12 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,471] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-31 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,473] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions __consumer_offsets-22,votedComment-0,springCloudBusOutput-0,__consumer_offsets-30,__consumer_offsets-8,__consumer_offsets-21,__consumer_offsets-4,__consumer_offsets-27,__consumer_offsets-7,__consumer_offsets-9,__consumer_offsets-46,__consumer_offsets-25,__consumer_offsets-35,__consumer_offsets-41,__consumer_offsets-33,__consumer_offsets-23,__consumer_offsets-49,__consumer_offsets-47,__consumer_offsets-16,__consumer_offsets-28,__consumer_offsets-31,__consumer_offsets-36,__consumer_offsets-42,__consumer_offsets-3,__consumer_offsets-18,createdProposal-0,__consumer_offsets-37,__consumer_offsets-15,__consumer_offsets-24,createdComment-0,__consumer_offsets-38,__consumer_offsets-17,__consumer_offsets-48,__consumer_offsets-19,__consumer_offsets-11,__consumer_offsets-13,__consumer_offsets-2,__consumer_offsets-43,__consumer_offsets-6,__consumer_offsets-14,__consumer_offsets-20,__consumer_offsets-0,__consumer_offsets-44,deletedProposal-0,__consumer_offsets-39,__consumer_offsets-12,__consumer_offsets-45,__consumer_offsets-1,__consumer_offsets-5,__consumer_offsets-26,springCloudBusInput-0,__consumer_offsets-29,__consumer_offsets-34,__consumer_offsets-10,votedProposal-0,__consumer_offsets-32,__consumer_offsets-40 (kafka.server.ReplicaFetcherManager)
+[2017-05-10 10:02:10,485] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-31 in 10 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,494] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-37 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,502] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-37 in 4 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,503] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-43 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,534] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.c31b1cfd-1116-4767-b161-66ff184fb9a5 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,534] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-43 in 30 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,536] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-49 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,540] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.ad617906-70a3-465f-959e-2490971a6b14 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,540] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-49 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,541] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-44 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,544] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-44 in 2 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,544] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-1 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,548] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.202687d4-e966-4dd0-b71e-470f0c27e107 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,549] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.8fbe2ce1-c392-4cb4-b260-550d3c867aff with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,550] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-1 in 6 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,550] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-7 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,554] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-7 in 4 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,554] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-13 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,559] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.d233bc1b-f899-4d85-9548-2685b526857c with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,560] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-13 in 5 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,560] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-19 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,564] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.f2acd4c9-2cdd-4f6c-be29-723c5b0af5ea with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,564] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-19 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,565] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-2 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,568] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-2 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,569] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-8 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,572] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-8 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,572] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-14 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,575] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-14 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,575] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-20 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,579] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-20 in 4 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,580] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-26 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,584] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.c3c032ea-c9ac-4b7d-ba7c-1e8979670b6c with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,584] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-26 in 4 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,585] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-32 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,589] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.e827321b-f1f3-4ff4-8346-8d9367eb01fe with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,591] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-32 in 6 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,592] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-38 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,596] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-38 in 4 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,596] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-3 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,601] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-3 in 4 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,601] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-9 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,607] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.674c05fb-6c46-40f1-a9a3-38579a0e1fe9 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,607] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-9 in 6 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,608] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-15 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,611] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-15 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,612] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-21 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,615] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-21 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,615] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-27 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,620] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.3e262f76-ee2a-4c5e-b863-e1d18293c0b2 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,622] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-27 in 6 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,623] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-33 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,628] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.7eaf551f-238b-4afb-ae96-5de36e06a5c8 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,629] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-33 in 5 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,630] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-39 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,633] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-39 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,634] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-45 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,639] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.7136a4ce-1670-4dda-a3f5-6d2c94ee129b with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,640] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-45 in 5 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,640] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-22 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,644] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-22 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,644] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-28 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,648] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.be45ce21-2159-4b63-a2d1-f7040117471d with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,648] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-28 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,649] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-34 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,653] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.b1e75150-f068-4cf8-887d-c15d644db2c5 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,654] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-34 in 5 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,655] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-40 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,659] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-40 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,659] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-46 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,662] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-46 in 2 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,662] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-41 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,668] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-41 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,669] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-47 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,673] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.e6f912e2-983e-4990-bc62-6c588efffbbe with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,674] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-47 in 5 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,676] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-4 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,679] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-4 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,679] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-10 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,682] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-10 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,682] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-16 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,687] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-16 in 4 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,687] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-5 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,692] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-5 in 4 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,692] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-11 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,698] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.24f081fd-202a-42b9-853d-34b569dbad21 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,698] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.df54c8c9-10f3-4910-867d-30b04d51257d with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,699] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.49341fb2-5a04-446d-94f2-7635f187ac85 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,700] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-11 in 7 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,701] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-17 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,704] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-17 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,704] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-23 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,709] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.a4a4bea2-d232-4c02-9a38-e43ee000d8a4 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,709] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-23 in 5 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,710] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-29 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,714] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-29 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,715] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-35 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,719] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-35 in 4 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,719] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-0 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,724] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.440d5133-63f9-4f02-adc0-d683b91323c5 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,724] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-0 in 4 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,725] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-6 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,730] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-6 in 4 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,730] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-12 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,735] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.d9d056bf-44bf-42e1-8048-04cbc6768faa with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,735] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.9b10bbd6-be90-4e86-b3fe-93d97ffd23c2 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,736] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-12 in 5 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,737] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-18 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,741] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-18 in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,741] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-24 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,745] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.7dfa9fb8-6b05-45ab-a9eb-eb0aab9fb9b1 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,745] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.139b2d76-1db7-464c-bec1-153215683140 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,746] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.c8afbc60-f493-464e-81b1-643489ce4d3f with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,747] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.04520935-6f82-4434-a57d-a5381a0a4087 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,747] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-24 in 6 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,748] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-30 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,752] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.f851e5c8-d38e-49fe-a603-804a6e03014d with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,752] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-30 in 4 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,753] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-36 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,757] INFO [GroupCoordinator 0]: Loading group metadata for anonymous.eb75f16d-c7dc-4411-a164-0f59fb43dc97 with generation 2 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,757] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-36 in 4 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,758] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-42 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,764] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-42 in 6 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,764] INFO [Group Metadata Manager on Broker 0]: Loading offsets and group metadata from __consumer_offsets-48 (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:02:10,817] INFO [GroupCoordinator 0]: Loading group metadata for test with generation 11 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:02:10,817] INFO [Group Metadata Manager on Broker 0]: Finished loading offsets from __consumer_offsets-48 in 52 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:03:52,460] INFO [GroupCoordinator 0]: Preparing to restabilize group anonymous.4fadba76-0653-4656-85dd-9675f409d366 with old generation 0 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:03:52,465] INFO [GroupCoordinator 0]: Stabilized group anonymous.4fadba76-0653-4656-85dd-9675f409d366 generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:03:52,473] INFO [GroupCoordinator 0]: Assignment received from leader for group anonymous.4fadba76-0653-4656-85dd-9675f409d366 for generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:12:09,621] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 3 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:12:22,646] INFO [GroupCoordinator 0]: Preparing to restabilize group anonymous.2efaef9d-c942-4913-9d7c-6482009a13e2 with old generation 0 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:12:22,648] INFO [GroupCoordinator 0]: Stabilized group anonymous.2efaef9d-c942-4913-9d7c-6482009a13e2 generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:12:22,654] INFO [GroupCoordinator 0]: Assignment received from leader for group anonymous.2efaef9d-c942-4913-9d7c-6482009a13e2 for generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:12:25,583] INFO [GroupCoordinator 0]: Preparing to restabilize group anonymous.4fadba76-0653-4656-85dd-9675f409d366 with old generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:12:25,584] INFO [GroupCoordinator 0]: Group anonymous.4fadba76-0653-4656-85dd-9675f409d366 with generation 2 is now empty (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:21:16,945] INFO [GroupCoordinator 0]: Preparing to restabilize group anonymous.c9f2fcd1-5b7c-4c73-a38d-050604ea9b1f with old generation 0 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:21:16,945] INFO [GroupCoordinator 0]: Stabilized group anonymous.c9f2fcd1-5b7c-4c73-a38d-050604ea9b1f generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:21:16,953] INFO [GroupCoordinator 0]: Assignment received from leader for group anonymous.c9f2fcd1-5b7c-4c73-a38d-050604ea9b1f for generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:21:19,697] INFO [GroupCoordinator 0]: Preparing to restabilize group anonymous.2efaef9d-c942-4913-9d7c-6482009a13e2 with old generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:21:19,697] INFO [GroupCoordinator 0]: Group anonymous.2efaef9d-c942-4913-9d7c-6482009a13e2 with generation 2 is now empty (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:22:09,619] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:31:19,996] INFO [GroupCoordinator 0]: Preparing to restabilize group anonymous.c9f2fcd1-5b7c-4c73-a38d-050604ea9b1f with old generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:31:19,997] INFO [GroupCoordinator 0]: Group anonymous.c9f2fcd1-5b7c-4c73-a38d-050604ea9b1f with generation 2 is now empty (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:32:09,620] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:32:33,396] INFO [GroupCoordinator 0]: Preparing to restabilize group anonymous.02403e8a-2f8b-4098-adc4-045e2405512a with old generation 0 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:32:33,397] INFO [GroupCoordinator 0]: Stabilized group anonymous.02403e8a-2f8b-4098-adc4-045e2405512a generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:32:33,402] INFO [GroupCoordinator 0]: Assignment received from leader for group anonymous.02403e8a-2f8b-4098-adc4-045e2405512a for generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:35:27,459] INFO [GroupCoordinator 0]: Preparing to restabilize group anonymous.02403e8a-2f8b-4098-adc4-045e2405512a with old generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:35:27,459] INFO [GroupCoordinator 0]: Group anonymous.02403e8a-2f8b-4098-adc4-045e2405512a with generation 2 is now empty (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:35:27,739] INFO [GroupCoordinator 0]: Preparing to restabilize group anonymous.78ad10dc-d29f-40ca-bdb0-1810f9569af8 with old generation 0 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:35:27,741] INFO [GroupCoordinator 0]: Stabilized group anonymous.78ad10dc-d29f-40ca-bdb0-1810f9569af8 generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:35:27,751] INFO [GroupCoordinator 0]: Assignment received from leader for group anonymous.78ad10dc-d29f-40ca-bdb0-1810f9569af8 for generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:42:09,619] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 10:46:41,486] INFO [GroupCoordinator 0]: Preparing to restabilize group anonymous.a6b412e0-4943-457c-aab7-18e5f79feefc with old generation 0 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:46:41,487] INFO [GroupCoordinator 0]: Stabilized group anonymous.a6b412e0-4943-457c-aab7-18e5f79feefc generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:46:41,493] INFO [GroupCoordinator 0]: Assignment received from leader for group anonymous.a6b412e0-4943-457c-aab7-18e5f79feefc for generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:46:43,017] INFO [GroupCoordinator 0]: Preparing to restabilize group anonymous.78ad10dc-d29f-40ca-bdb0-1810f9569af8 with old generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:46:43,017] INFO [GroupCoordinator 0]: Group anonymous.78ad10dc-d29f-40ca-bdb0-1810f9569af8 with generation 2 is now empty (kafka.coordinator.GroupCoordinator)
+[2017-05-10 10:52:09,619] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 11:02:09,618] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 11:12:09,626] INFO [Group Metadata Manager on Broker 0]: Removed 4 expired offsets in 7 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 11:22:09,618] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 11:32:09,619] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-10 11:33:18,758] INFO [GroupCoordinator 0]: Preparing to restabilize group anonymous.72a99e59-1495-4fa5-b7f4-7119a221c88b with old generation 0 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 11:33:18,759] INFO [GroupCoordinator 0]: Stabilized group anonymous.72a99e59-1495-4fa5-b7f4-7119a221c88b generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 11:33:18,763] INFO [GroupCoordinator 0]: Assignment received from leader for group anonymous.72a99e59-1495-4fa5-b7f4-7119a221c88b for generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 11:33:20,657] INFO [GroupCoordinator 0]: Preparing to restabilize group anonymous.a6b412e0-4943-457c-aab7-18e5f79feefc with old generation 1 (kafka.coordinator.GroupCoordinator)
+[2017-05-10 11:33:20,657] INFO [GroupCoordinator 0]: Group anonymous.a6b412e0-4943-457c-aab7-18e5f79feefc with generation 2 is now empty (kafka.coordinator.GroupCoordinator)
+[2017-05-10 11:42:09,618] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)

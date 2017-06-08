@@ -1,0 +1,71 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Comment proposal</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous" />
+<!-- Latest compiled and minified JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../static/css/common.css"/>
+</head>
+<body>
+	<div>
+		<div>
+			<div>
+				<h1 class="text-primary text-center" th:text="${p.getTitle()}"></h1>
+				<div>
+					<div>
+						<h2>Content:</h2>
+						<h3 th:text="${p.getText()}"></h3>
+					</div>
+				</div>
+				<div>
+					<div>
+						<h3>Comments:</h3>
+						<div>
+							<table class="table">
+								<tr th:each="c : ${p.getComments()}">
+									<td><div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<span class="text-muted" th:text="${c.getUser().getName()}"></span>
+											</div>
+											<div class="panel-body">
+												<p th:text="${c.getText()}"></p>
+											</div>
+										</div>
+									</div></td>
+									<td><a th:href="${'/upvoteComment/' + p.getId()}"
+										class="btn btn-info" th:proID="${p.getId()}">Me Likey</a></td>
+										<td th:text="${p.getPositiveVotes().size()}"></td>
+										<td>-</td>
+										<td th:text="${p.getNegativeVotes().size()}"></td>
+									<td><a th:href="${'/downvoteComment/' + p.getId()}"
+										class="btn btn-info" th:proID="${p.getId()}">Nu-uh</a></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div th:with="idProposal=${p.getId()}">
+						<h3>Add comment</h3>
+						<form role="form" th:action="@{/createComment/} + ${idProposal}"
+							th:object="${Comment}" method="POST">
+							<textarea class="form-control" rows="5" id="contentInput"
+							th:field="*{text}"></textarea>
+							<button value="Comment" type="submit" class="btn btn-info"
+								id="SubmitComment">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
