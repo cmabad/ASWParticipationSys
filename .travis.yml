@@ -8,11 +8,12 @@ before_script:
 - "sh -e /etc/init.d/xvfb start"
 - sleep 3 # give xvfb some time to start
 
-- wget http://apache.rediris.es/kafka/0.10.2.1/kafka_2.12-0.10.2.1.tgz > kafka.tgz
-- mkdir kafka_2.12-0.10.2.1 && tar -xf kafka.tgz -C kafka_2.12-0.10.2.1
-- nohup bash -c "cd kafka && bin/zookeeper-server-start.sh config/zookeeper.properties &"
+before_install:
+- wget http://apache.rediris.es/kafka/0.10.2.1/kafka_2.12-0.10.2.1.tgz -O kafka.tgz
+- mkdir -p kafka_2.12-0.10.2.1 && tar -xzf kafka.tgz -C kafka_2.12-0.10.2.1 --strip-components 1
+- nohup bash -c "cd kafka_2.12-0.10.2.1 && bin/zookeeper-server-start.sh config/zookeeper.properties &"
 - sleep 5
-- nohup bash -c "cd kafka && bin/kafka-server-start.sh config/server.properties &"
+- nohup bash -c "cd kafka_2.12-0.10.2.1 && bin/kafka-server-start.sh config/server.properties &"
 - sleep 5
 
 notifications:
