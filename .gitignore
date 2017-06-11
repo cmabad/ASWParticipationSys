@@ -1,10 +1,10 @@
 /target/
 
-kafka_2.11-0.10.2.0/
-libs/
+#kafka_2.11-0.10.2.0/
+#libs/
 
 .metadata
-bin/
+/bin/
 tmp/
 *.tmp
 *.bak

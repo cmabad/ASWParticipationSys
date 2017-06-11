@@ -1,7 +1,6 @@
 package es.uniovi.asw;
 
 
-import java.util.Collection;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -17,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.google.common.collect.Lists;
 
 import es.uniovi.asw.dao.CommentDao;
 import es.uniovi.asw.dao.ProposalDao;
@@ -31,7 +29,7 @@ import es.uniovi.asw.model.User;
 public class MainController {
 	private User loggedUser;
     @Autowired
-    private KafkaProducer kafkaProducer;
+    //private KafkaProducer kafkaProducer;
     private List<Proposal> proposals;
     
     @ModelAttribute("Comment")
@@ -55,7 +53,7 @@ public class MainController {
     
     @RequestMapping("/send")
     public String send(Model model, @ModelAttribute Message message) {
-        kafkaProducer.send("exampleTopic", message.getMessage());
+        KafkaProducer.send("exampleTopic", message.getMessage());
         return "redirect:/";
     }
 	

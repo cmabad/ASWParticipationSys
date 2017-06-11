@@ -7,6 +7,7 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
+import es.uniovi.asw.PropReader;
 import es.uniovi.asw.dao.CommentDao;
 import es.uniovi.asw.dao.ProposalDao;
 import es.uniovi.asw.dao.UserDao;
@@ -16,6 +17,8 @@ import es.uniovi.asw.model.Proposal;
 import es.uniovi.asw.model.User;
 public class TestPls {
 	private static User currUser;
+	Proposal proposal = new Proposal(currUser, "Testing", "TestCategory", "TestText");
+	
 	@Before
 	public void Setup() {
 		new CommentDao();
@@ -28,6 +31,7 @@ public class TestPls {
 	
 	@Test
 	public void TestInsertProposal() {
+		System.out.println(PropReader.get("minimumVotesNumber"));
 		Proposal prop = new Proposal(currUser, "Testing", "TestCategory", "TestText");
 		ProposalDao.save(prop);
 		List<Proposal> list = ProposalDao.GetProposalByUser(currUser.getId());
@@ -46,10 +50,11 @@ public class TestPls {
 		assert(count1 < count2);
 	}
 
-	Proposal proposal = new Proposal(currUser, "Testing", "TestCategory", "TestText");
+	
 	
 	@Test
 	public void TestComment() {
+		
 		Comment comment = new Comment(currUser, proposal, "newComment");
 		CommentDao.save(comment);
 		

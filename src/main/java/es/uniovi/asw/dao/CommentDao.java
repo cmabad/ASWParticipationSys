@@ -20,7 +20,7 @@ public class CommentDao {
 	private static KafkaProducer kfc;
 	public CommentDao() {
 		try {
-			kfc = new KafkaProducer();
+			//kfc = new KafkaProducer();
 			openConn();
 		} catch (SQLException e) {
 			e.printStackTrace();
