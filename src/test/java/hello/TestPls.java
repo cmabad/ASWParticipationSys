@@ -61,6 +61,15 @@ public class TestPls {
 		assertTrue(comment.toString().contains("newComment"));
 	}
 	
+	@Test (expected = IllegalArgumentException.class)
+	public void TestCommentIllegal() {
+		String notAllowed[] = PropReader.get("notAllowedWords").split(",");
+		
+		
+		Comment comment = new Comment(currUser, proposal, notAllowed[0]);
+		CommentDao.save(comment);
+	}
+	
 	@Test
 	public void TestPositiveVote() {
 		List<Proposal> props = ProposalDao.GetProposalByUser(currUser.getId());

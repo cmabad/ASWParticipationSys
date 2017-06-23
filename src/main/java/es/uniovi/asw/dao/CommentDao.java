@@ -17,7 +17,7 @@ import es.uniovi.asw.model.filtrable.Filtrable;
 public class CommentDao {
 
 	private static Connection conn;
-	private static KafkaProducer kfc;
+//	private static KafkaProducer kfc;
 	public CommentDao() {
 		try {
 			//kfc = new KafkaProducer();
@@ -51,7 +51,7 @@ public class CommentDao {
 			stmt.setInt(2, comment.getUser().getId());
 			stmt.setInt(3, comment.getProposal().getId());
 			stmt.setString(4, comment.getDate());
-			kfc.send("createdComment", String.valueOf(comment.getProposal().getId()));
+			KafkaProducer.send("createdComment", String.valueOf(comment.getProposal().getId()));
 			return stmt.executeUpdate();		
 
 		} catch (SQLException e) {

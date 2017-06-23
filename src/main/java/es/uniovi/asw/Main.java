@@ -11,7 +11,6 @@ import es.uniovi.asw.dao.CommentDao;
 import es.uniovi.asw.dao.ProposalDao;
 import es.uniovi.asw.dao.UserDao;
 import es.uniovi.asw.dao.VoteDao;
-import es.uniovi.asw.kafka.KafkaProducer;
 import es.uniovi.asw.menus.MainMenu;
 import es.uniovi.asw.menus.Menu;
 import es.uniovi.asw.model.User;

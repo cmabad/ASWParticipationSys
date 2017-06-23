@@ -51,7 +51,7 @@ public class VoteDao {
 					
 			}
 			//KafkaProducer kfc = new KafkaProducer();
-			//kfc.send("votedProposal", String.valueOf(prop.getId()));
+			KafkaProducer.send("votedProposal", String.valueOf(prop.getId()));
 		} catch (SQLException e) {
 			return;
 		}
@@ -71,7 +71,7 @@ public class VoteDao {
 					
 			}
 			//KafkaProducer kfc = new KafkaProducer();
-			//kfc.send("votedComment", String.valueOf(prop.getProposal().getId()));
+			KafkaProducer.send("votedComment", String.valueOf(prop.getProposal().getId()));
 		} catch (SQLException e) {
 			return;
 		}
