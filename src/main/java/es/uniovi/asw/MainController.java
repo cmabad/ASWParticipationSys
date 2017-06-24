@@ -31,6 +31,18 @@ public class MainController {
     //private KafkaProducer kafkaProducer;
     private List<Proposal> proposals;
     
+    /*
+     * ejecutarlo en los html, con bucle 
+     * <tr th:each="p : ${allProposals}">
+     * p.getTitle()...
+     */
+    @ModelAttribute("allProposals")
+    public List<Proposal> getAllProposals(){
+    	new ProposalDao();
+   		proposals = ProposalDao.getAllProposals();
+    	return proposals;
+    }
+    
     @ModelAttribute("Comment")
     public Comment getComment() {
     	return new Comment();
@@ -77,11 +89,9 @@ public class MainController {
     //move to commentProposal.html
     public ModelAndView commentProposal(@PathVariable("id") String idProposal, Model model){
     	new ProposalDao();
-    	System.out.println(idProposal);
     	Proposal p = ProposalDao.GetProposalByID(Integer.parseInt(idProposal));
-    	System.out.println("CHRSN COMMENT PROPOSAL: proposal " + p.getId() + ", size: " + p.getComments().size());
+    	System.out.println("CHRSN MAINCONTROLLER COMMENTpROPOSAL: proposal " + idProposal + ", comments: " + p.getComments().size());
     	ModelAndView mav = new ModelAndView("commentProposal");
-    	System.out.println(p);
     	model.addAttribute("p", p);
     	mav.addObject("p", p);
     	return mav;
@@ -140,33 +150,23 @@ public class MainController {
     }
     
     @RequestMapping("/upvoteComment/{id}")
-    public String upvoteComment(@PathVariable("id") String id, @ModelAttribute("id") Integer uid, RedirectAttributes request){
+    public String upvoteComment(@PathVariable("id") String idComment, @ModelAttribute("id") Integer uid, RedirectAttributes request){
     	new VoteDao();
-    	VoteDao.InsertVotesCom(Integer.parseInt(id),  loggedUser.getId(), 1);
+    	VoteDao.InsertVotesCom(Integer.parseInt(idComment),  loggedUser.getId(), 1);
     	request.addAttribute("id", loggedUser.getId());
     	request.addAttribute("password", loggedUser.getPassword());
     	return "showAddProposals";
     }
     
     @RequestMapping("/downvoteComment/{id}")
-    public String downvoteComment(@PathVariable("id") String id, @ModelAttribute("id") Integer uid, RedirectAttributes request){
+    public String downvoteComment(@PathVariable("id") String idComment, @ModelAttribute("id") Integer uid, RedirectAttributes request){
     	new VoteDao();
-    	VoteDao.InsertVotesCom(Integer.parseInt(id),  loggedUser.getId(), 0);
+    	VoteDao.InsertVotesCom(Integer.parseInt(idComment),  loggedUser.getId(), 0);
     	request.addAttribute("id", loggedUser.getId());
     	request.addAttribute("password", loggedUser.getPassword());
     	return "showAddProposals";
     }
     
-    /*
-     * ejecutarlo en los html, con bucle 
-     * <tr th:each="p : ${allProposals}">
-     * p.getTitle()...
-     */
-    @ModelAttribute("allProposals")
-    public List<Proposal> getAllProposals(){
-    	new ProposalDao();
-   		proposals = ProposalDao.getAllProposals();
-    	return proposals;
-    }
+
     
 }

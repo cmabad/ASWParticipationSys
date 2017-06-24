@@ -2,10 +2,6 @@ package es.uniovi.asw.model;
 
 public class User {
 
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", email=" + email + ", gender=" + (gender ? "Male" : "Female") + "]";
-	}
 
 	private String name;
 	private String LName;
@@ -118,5 +114,10 @@ public class User {
 
 	public void setAddress(String address) {
 		Address = address;
+	}
+	
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", email=" + email + ", gender=" + (gender ? "Male" : "Female") + "]";
 	}
 }

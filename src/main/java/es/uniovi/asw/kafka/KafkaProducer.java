@@ -18,7 +18,8 @@ public class KafkaProducer {
 
 	private static final Logger logger = Logger.getLogger(KafkaProducer.class);
 	private static KafkaProducer instance;
-	
+	@Autowired
+	private KafkaTemplate<String, String> kafkaTemplate = new KafkaProducerFactory().kafkaTemplate();
 	
 	private static KafkaProducer getInstance(){
 		if (instance == null)
@@ -26,15 +27,13 @@ public class KafkaProducer {
 		return instance;
 	}
 	
-	@Autowired
-	private KafkaTemplate<String, String> kafkaTemplate;
 
 	public static void send(String topic, String data) {
 		getInstance().sendMessage(topic, data);
 	}
 
 	private void sendMessage(String topic, String data){
-		kafkaTemplate = new KafkaProducerFactory().kafkaTemplate();
+		
 		ListenableFuture<SendResult<String, String>> future = kafkaTemplate.send(topic, data);
 		future.addCallback(new ListenableFutureCallback<SendResult<String, String>>() {
 			@Override

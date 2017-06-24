@@ -17,7 +17,7 @@ import es.uniovi.asw.model.Proposal;
 import es.uniovi.asw.model.User;
 public class TestPls {
 	private static User currUser;
-	Proposal proposal = new Proposal(currUser, "Testing", "TestCategory", "TestText");
+	private Proposal proposal = new Proposal(currUser, "Testing", "TestCategory", "TestText");
 	
 	@Before
 	public void Setup() {

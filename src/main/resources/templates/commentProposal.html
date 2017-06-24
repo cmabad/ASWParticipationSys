@@ -42,13 +42,13 @@
 											</div>
 										</div>
 									</div></td>
-									<td><a th:href="${'/upvoteComment/' + p.getId()}"
-										class="btn btn-info" th:proID="${p.getId()}">Me Likey</a></td>
-										<td th:text="${p.getPositiveVotes().size()}"></td>
+									<td><a th:href="${'/upvoteComment/' + c.getId()}"
+										class="btn btn-info" th:proID="${c.getId()}">Me Likey</a></td>
+										<td th:text="${c.getPositiveVotes().size()}"></td>
 										<td>-</td>
-										<td th:text="${p.getNegativeVotes().size()}"></td>
-									<td><a th:href="${'/downvoteComment/' + p.getId()}"
-										class="btn btn-info" th:proID="${p.getId()}">Nu-uh</a></td>
+										<td th:text="${c.getNegativeVotes().size()}"></td>
+									<td><a th:href="${'/downvoteComment/' + c.getId()}"
+										class="btn btn-info" th:proID="${c.getId()}">Nu-uh</a></td>
 								</tr>
 							</table>
 						</div>

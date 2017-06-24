@@ -10,7 +10,7 @@ import es.uniovi.asw.model.User;
 
 public class LoadUsers {
 	
-	public static void main(String... args) {
+	public void main(String... args) {
 		final LoadUsers runner = new LoadUsers();
 		runner.run(args);
 	}

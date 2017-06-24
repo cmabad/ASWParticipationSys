@@ -81,9 +81,9 @@ public class ProposalMenu extends AbstractMenu{
 			Proposal prop = ProposalDao.getAllProposals().get(Integer.parseInt(console.readLine())-1);
 			System.out.println("Press 1 to vote positive and 2 to vote negative");
 			String choice = console.readLine();
-			if(choice.equals("1"))
+			if("1".equals(choice))
 				prop.AddPositive(currentUser);
-			else if(choice.equals("2"))
+			else if("2".equals(choice))
 				prop.AddNegative(currentUser);
 			else
 				System.out.println("Invalid choice");

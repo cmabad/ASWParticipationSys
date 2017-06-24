@@ -122,9 +122,8 @@ public class ProposalDao {
 			PreparedStatement stmt = conn.prepareStatement(PropReader.get("PROPOSAL_EXISTS"));
 			stmt.setInt(1, proposal.getId());
 			ResultSet rs = stmt.executeQuery();
-			if(rs.next())
-				return true;
-			return false;
+			return rs.next();
+
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

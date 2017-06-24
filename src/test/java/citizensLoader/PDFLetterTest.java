@@ -29,7 +29,7 @@ public class PDFLetterTest {
         System.out.println(expected);
     }
     
-    static String getText(String filename) throws IOException {
+    private static String getText(String filename) throws IOException {
     	File pdfFile = new File(filename);
         PDDocument doc = PDDocument.load(pdfFile);
         return new PDFTextStripper().getText(doc);
