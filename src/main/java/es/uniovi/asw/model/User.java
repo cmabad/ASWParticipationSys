@@ -16,6 +16,8 @@ public class User {
 	private String password;
 	private String Address;
 	
+	private String nationality;
+	
 	public User(String name, String LName, int id, String email, String DOB, boolean gender, String password, String Address) {
 		this.name = name;
 		this.LName = LName;
@@ -29,6 +31,16 @@ public class User {
 	
 	public User() {
 		// TODO Auto-generated constructor stub
+	}
+
+	public User(String name, String lName, String email, String dOB, String address, String nationality, int id) {
+		this.name = name;
+		this.LName = lName;
+		this.email = email;
+		this.DOB = dOB;
+		this.Address = address;
+		this.nationality = nationality;
+		this.id = id;
 	}
 
 	public int getId() {
@@ -61,6 +73,8 @@ public class User {
 	public void setGender(boolean gender) {
 		this.gender = gender;
 	}
+	
+	
 
 //	public int getDNI() {
 //		return DNI;
@@ -69,6 +83,14 @@ public class User {
 //	public void setDNI(int dNI) {
 //		DNI = dNI;
 //	}
+
+	public String getNationality() {
+		return nationality;
+	}
+
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
+	}
 
 	public String getDOB() {
 		return DOB;
