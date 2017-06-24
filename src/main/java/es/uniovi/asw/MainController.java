@@ -117,7 +117,6 @@ public class MainController {
     		//return new ModelAndView("showAddProposals");
     	} catch(IllegalArgumentException e){
     		//return new ModelAndView("error");
-    		System.out.println("You've written an invalid word: " + e.getMessage().split(":")[1]);
     		request.addAttribute("error", "You've written an invalid word: " + e.getMessage().split(":")[1]);
     		return "redirect:error";
     	}
