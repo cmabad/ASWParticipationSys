@@ -28,7 +28,7 @@ public class LoadUsers {
 			try {
 				users = reader.readList(file);
 				for(User us : users)  {
-//					userdao.saveUser(us);
+					userdao.saveUser(us);
 					System.out.println("Saved " + us.toString());
 				}
 				System.out.println("Loaded " + users.size() + " users from " + file + "\n");

@@ -87,7 +87,7 @@ public class ReadList {
 			String nationality = row.getCell(5).getStringCellValue();
 			int id = (int) row.getCell(5).getNumericCellValue();
 
-//			us = new User(name,LName, email, DOB, address, nationality, id);
+			us = new User(name,LName, email, DOB, address, nationality, id);
 		
 		us.setPassword(PasswordGenerator.generateRandomPassword());
 		}
