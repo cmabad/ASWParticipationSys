@@ -109,10 +109,18 @@ public class MainController {
     							@RequestParam(value="category") String category, Model model, RedirectAttributes request){
     	new ProposalDao();
     	Proposal prp = new Proposal(loggedUser, title, category, text);
-    	ProposalDao.save(prp);
     	request.addAttribute("id", loggedUser.getId());
-    	request.addAttribute("password", loggedUser.getPassword());
-    	return "redirect:showAddProposals";
+		request.addAttribute("password", loggedUser.getPassword());
+    	try{
+    		ProposalDao.save(prp);
+    		return "redirect:showAddProposals";
+    		//return new ModelAndView("showAddProposals");
+    	} catch(IllegalArgumentException e){
+    		//return new ModelAndView("error");
+    		System.out.println("You've written an invalid word: " + e.getMessage().split(":")[1]);
+    		request.addAttribute("error", "You've written an invalid word: " + e.getMessage().split(":")[1]);
+    		return "redirect:error";
+    	}
     }
     
     @RequestMapping("/createComment/{id}")
