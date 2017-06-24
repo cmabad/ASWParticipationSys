@@ -1,0 +1,5 @@
+-repeated instances 	-> singleton
+-unnecessary classes 	-> removal
+-travis not working 	-> kafka deployment (travis.yml)
+-wrong SQL queries 	-> change
+-unhandled exceptions	-> exception handling implemented and error.html page

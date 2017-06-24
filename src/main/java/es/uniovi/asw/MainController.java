@@ -75,10 +75,11 @@ public class MainController {
     
     @RequestMapping("/commentProposal/{id}")
     //move to commentProposal.html
-    public ModelAndView commentProposal(@PathVariable("id") String id, Model model){
+    public ModelAndView commentProposal(@PathVariable("id") String idProposal, Model model){
     	new ProposalDao();
-    	System.out.println(id);
-    	Proposal p = ProposalDao.GetProposalByID(Integer.parseInt(id));
+    	System.out.println(idProposal);
+    	Proposal p = ProposalDao.GetProposalByID(Integer.parseInt(idProposal));
+    	System.out.println("CHRSN COMMENT PROPOSAL: proposal " + p.getId() + ", size: " + p.getComments().size());
     	ModelAndView mav = new ModelAndView("commentProposal");
     	System.out.println(p);
     	model.addAttribute("p", p);
@@ -124,12 +125,18 @@ public class MainController {
     
     @RequestMapping("/createComment/{id}")
     // {id} proposal ID
-    public String createComment(@ModelAttribute("Comment") Comment comment, @PathVariable("id") String proposalID, @RequestParam(value="text") String text){
+    public String createComment(@ModelAttribute("Comment") Comment comment, @PathVariable("id") String proposalID, 
+    										@RequestParam(value="text") String text,  RedirectAttributes request, Model model){
     	new CommentDao();
     	new ProposalDao();
     	Comment com = new Comment(loggedUser,ProposalDao.GetProposalByID(Integer.parseInt(proposalID)), text);
-    	CommentDao.save(com);
-    	return "redirect:/commentProposal/" + proposalID;
+    	try{
+    		CommentDao.save(com);
+    		return "redirect:/commentProposal/" + proposalID;
+    	} catch(IllegalArgumentException illegalWord){
+    		request.addAttribute("error", "You've written an invalid word: " + illegalWord.getMessage().split(":")[1]);
+    		return "redirect:error";
+    	}
     }
     
     @RequestMapping("/upvoteComment/{id}")

@@ -61,7 +61,7 @@ public class CommentDao {
 	
 	public static List<Filtrable> getCommentsOf(Proposal proposal){
 		try { 
-			PreparedStatement stmt = conn.prepareStatement(PropReader.get("COMMENT_BY_PROPOSAL"));
+			PreparedStatement stmt = conn.prepareStatement(PropReader.get("COMMENTS_BY_PROPOSAL"));
 			stmt.setInt(1, proposal.getId());
 			
 			ResultSet rs = stmt.executeQuery();		
@@ -75,7 +75,10 @@ public class CommentDao {
 				comments.add(com);
 			}
 			
+			System.out.println("CHRSN COMMENTDAO GETCOMMENTSOF: proposal " + proposal.getId() + ", size: " + comments.size());
 			return comments;
+			
+			
 			
 		} catch (SQLException e) {
 			return null;		
