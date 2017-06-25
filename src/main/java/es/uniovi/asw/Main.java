@@ -1,7 +1,4 @@
 package es.uniovi.asw;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,14 +8,12 @@ import es.uniovi.asw.dao.CommentDao;
 import es.uniovi.asw.dao.ProposalDao;
 import es.uniovi.asw.dao.UserDao;
 import es.uniovi.asw.dao.VoteDao;
-import es.uniovi.asw.menus.MainMenu;
-import es.uniovi.asw.menus.Menu;
-import es.uniovi.asw.model.User;
+
 @SpringBootApplication
 public class Main {
 
-	private static BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
-	private static User currentUser = null;
+	//private static BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
+	//private static User currentUser = null;
 
 	public static void main (String[] args){
 		/*logUser();
@@ -46,7 +41,7 @@ public class Main {
 //	    KafkaProducer.send("topic1", "data1");
 //	    KafkaProducer.send("topic2", "data2");
 	}
-	
+	/*
 	private static User logUser(){
 		new UserDao();
 		try {
@@ -82,4 +77,5 @@ public class Main {
 		
 		System.out.println("Bye!");
 	}
+	*/
 }

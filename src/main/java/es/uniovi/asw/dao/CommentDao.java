@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import es.uniovi.asw.PropReader;
-import es.uniovi.asw.kafka.KafkaProducer; 
 import es.uniovi.asw.model.Comment;
 import es.uniovi.asw.model.Proposal;
 import es.uniovi.asw.model.filtrable.Filtrable;
@@ -51,7 +50,7 @@ public class CommentDao {
 			stmt.setInt(2, comment.getUser().getId());
 			stmt.setInt(3, comment.getProposal().getId());
 			stmt.setString(4, comment.getDate());
-			KafkaProducer.send("createdComment", String.valueOf(comment.getProposal().getId()));
+//			KafkaProducer.send("createdComment", String.valueOf(comment.getProposal().getId()));
 			return stmt.executeUpdate();		
 
 		} catch (SQLException e) {
@@ -75,7 +74,6 @@ public class CommentDao {
 				comments.add(com);
 			}
 			
-			System.out.println("CHRSN COMMENTDAO GETCOMMENTSOF: proposal " + proposal.getId() + ", size: " + comments.size());
 			return comments;
 			
 			

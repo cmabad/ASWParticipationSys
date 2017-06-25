@@ -107,10 +107,9 @@ public class ProposalDao {
 				Proposal prop = new Proposal(UserDao.getUserByID(rs.getInt("UserID")), rs.getString("Title"),
 						rs.getString("Category"), rs.getString("Text"), rs.getInt("ID"), rs.getString("Date"));
 				VoteDao.SetVotes(prop);
-				System.out.println(prop);
 				prop.setComments(CommentDao.getCommentsOf(prop));
 				propos.add(prop);
-			} 
+			}
 			return propos;
 		} catch (SQLException e) {
 			return null;
@@ -147,7 +146,7 @@ public class ProposalDao {
 		try {
 			if(exists(proposal)) {
 				VoteDao.SaveVotes(proposal);
-				KafkaProducer.send("votedProposal", String.valueOf(proposal.getId()));
+//				KafkaProducer.send("votedProposal", String.valueOf(proposal.getId()));
 				return 1;
 			}
 			String[] notAllowed = PropReader.get("notAllowedWords").toString().split(",");
@@ -164,7 +163,7 @@ public class ProposalDao {
 			stmt.setString(5, proposal.getCategory());
 			stmt.setString(6, proposal.getDate());
 			VoteDao.SaveVotes(proposal);
-			KafkaProducer.send("createdProposal", String.valueOf(proposal.getId()));
+//			KafkaProducer.send("createdProposal", String.valueOf(proposal.getId()));
 			return stmt.executeUpdate();		
 
 		} catch (SQLException e) {

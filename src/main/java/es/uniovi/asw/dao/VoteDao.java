@@ -8,7 +8,6 @@ import java.sql.SQLException;
 import java.util.List;
 
 import es.uniovi.asw.PropReader;
-import es.uniovi.asw.kafka.KafkaProducer;
 import es.uniovi.asw.model.Comment;
 import es.uniovi.asw.model.Proposal;
 import es.uniovi.asw.model.User;
@@ -50,8 +49,6 @@ public class VoteDao {
 					prop.AddNegative(UserDao.getUserByID(rs.getInt("VotUserID")));
 					
 			}
-			//KafkaProducer kfc = new KafkaProducer();
-			KafkaProducer.send("votedProposal", String.valueOf(prop.getId()));
 		} catch (SQLException e) {
 			return;
 		}
@@ -62,21 +59,13 @@ public class VoteDao {
 			PreparedStatement pstmt = conn.prepareStatement(PropReader.get("VOTE_COMM"));
 			pstmt.setInt(1, comment.getId());
 			ResultSet rs = pstmt.executeQuery();
-			int counter = 0;
 			
 			if (rs.next()) {
-				counter++;
 				if(rs.getInt("Type") == 1) 
 					comment.AddPositive(UserDao.getUserByID(rs.getInt("VotUserID")));
 				else
 					comment.AddNegative(UserDao.getUserByID(rs.getInt("VotUserID")));
 			}
-			
-			System.out.println("CHRSN VOTEDAO SETVOTES: comment " + comment.getId() + ", text: " + comment.getText() +
-					", pos: " + comment.getPositiveVotes().size() + ", neg: " + comment.getNegativeVotes().size());
-			
-			//KafkaProducer kfc = new KafkaProducer();
-			KafkaProducer.send("votedComment", String.valueOf(comment.getProposal().getId()));
 		} catch (SQLException e) {
 			return;
 		}

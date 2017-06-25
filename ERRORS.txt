@@ -1,5 +1,6 @@
 -repeated instances 	-> singleton
 -unnecessary classes 	-> removal
 -travis not working 	-> kafka deployment (travis.yml)
--wrong SQL queries 	-> change
+-wrong SQL queries 		-> change
 -unhandled exceptions	-> exception handling implemented and error.html page
+-repeated kafka 		-> kafka send in daos instead of mainCOntroller
