@@ -144,7 +144,7 @@ public class MainController {
     	Comment com = new Comment(loggedUser,ProposalDao.GetProposalByID(Integer.parseInt(proposalID)), text);
     	try{
     		CommentDao.save(com);
-    		KafkaProducer.send("createdComment", String.valueOf(comment.getProposal().getId()));
+    		KafkaProducer.send("createdComment", String.valueOf(comment.getId()));
     		return "redirect:/commentProposal/" + proposalID;
     	} catch(IllegalArgumentException illegalWord){
     		request.addAttribute("error", "You've written an invalid word: " + illegalWord.getMessage().split(":")[1]);

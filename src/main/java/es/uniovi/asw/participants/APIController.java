@@ -15,15 +15,15 @@ import es.uniovi.asw.participants.repository.UserRepository;
 
 
 
-@RestController
+//@RestController
 public class APIController {
 
 	private static final Logger LOG = LoggerFactory.getLogger(APIController.class);
 
-    @Autowired
+    //@Autowired
     private UserRepository repository;
 
-    @PostMapping("/user")
+    //@PostMapping("/user")
     public ResponseEntity<User> getGivenCredentials(
             @RequestBody Credentials credentials) {
         LOG.info("Logging in, user:  " + credentials.getEmail());
