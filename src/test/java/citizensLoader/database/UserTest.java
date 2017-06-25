@@ -13,7 +13,7 @@ public class UserTest {
 	
 	UserDao userdao = new UserDao();
 
-	
+
 	@Test
 	public void getUserByEmailTest() throws ParseException {
 
@@ -24,9 +24,19 @@ public class UserTest {
 		int dniFound = userByEmail.getId();
 		
 		assertEquals(dniFound, dniUser);
+		
+		int dniUser2 = 7190060;
+		
+		User userByEmail2 = userdao.getUserByEmail("katia@uniovi.es");
+		int dniFound2 = userByEmail2.getId();
+		
+		assertEquals(dniFound2, dniUser2);
+		
+		int dniUser3 = 987654;
+		
+		User userByEmail3 = userdao.getUserByEmail("pepe@uniovi.es");
+		int dniFound3 = userByEmail3.getId();
+		
+		assertEquals(dniFound3, dniUser3);
 	}
-	
-	
-	
-
 }
