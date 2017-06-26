@@ -13,7 +13,7 @@ import es.uniovi.asw.model.Comment;
 import es.uniovi.asw.model.Proposal;
 import es.uniovi.asw.model.filtrable.Filtrable;
 
-public class CommentDao {
+public class CommentDao{
 
 	private static Connection conn;
 //	private static KafkaProducer kfc;
@@ -26,7 +26,7 @@ public class CommentDao {
 		}
 	}
 
-	private void openConn() throws SQLException {
+	private static void openConn() throws SQLException {
 		try {
 			if (conn == null) {
 				Class.forName("com.mysql.jdbc.Driver");
@@ -80,6 +80,23 @@ public class CommentDao {
 			
 		} catch (SQLException e) {
 			return null;		
+		}
+	}
+	
+	public static int getNewIdNumber() {
+		try {
+			openConn();
+			PreparedStatement stmt = conn.prepareStatement(PropReader.get("COMMENT_NEW_ID"));
+			
+			ResultSet rs = stmt.executeQuery();
+			
+		if(rs.next())
+			return rs.getInt(1);
+		
+		return 0;
+			
+		} catch (SQLException e) {
+			return 0;		
 		}
 	}
 	

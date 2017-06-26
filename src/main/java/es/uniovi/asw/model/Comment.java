@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import es.uniovi.asw.model.filtrable.CFiltrable;
+import es.uniovi.asw.participationSystem.dao.CommentDao;
 
 public class Comment extends CFiltrable implements Removable{
 
@@ -16,6 +17,7 @@ public class Comment extends CFiltrable implements Removable{
 	
 	public Comment(User user, Proposal proposal, String text){
 		super();
+		this.id = CommentDao.getNewIdNumber()+1;
 		this.positiveVotes = new ArrayList<User>();
 		this.negativeVotes = new ArrayList<User>();
 		this.user = user;
