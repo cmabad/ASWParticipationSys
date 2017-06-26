@@ -39,4 +39,16 @@ public class UserTest {
 		
 		assertEquals(dniFound3, dniUser3);
 	}
+	
+	@Test
+	public void getUserByIdTest() throws ParseException {
+
+		User user = new User("pepe", "fernandez", "pepe@uniovi.es", "27-06-1995", "Oviedo", "Español", 987654);
+
+		user.setPassword("01234");
+		user.setGender(true);
+		
+		User found = userdao.getUserByID(987654);
+		assertEquals(user, found);
+	}
 }
