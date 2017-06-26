@@ -78,19 +78,19 @@ public class ReadList {
 		
 		User us = null;
 		
-		if (row != null) {
+		if (row != null) {			
 			String name = row.getCell(0).getStringCellValue();
 			String LName = row.getCell(1).getStringCellValue();
 			String email = row.getCell(2).getStringCellValue();
-			String DOB = row.getCell(3).getStringCellValue();
+			String DOB = row.getCell(3).toString();
 			String address = row.getCell(4).getStringCellValue();
 			String nationality = row.getCell(5).getStringCellValue();
-			int id = (int) row.getCell(5).getNumericCellValue();
+			int id = (int) row.getCell(6).getNumericCellValue();
 
 			us = new User(name,LName, email, DOB, address, nationality, id);
 		
 		us.setPassword(PasswordGenerator.generateRandomPassword());
 		}
 		return us;
-	}	
+	}		
 }
