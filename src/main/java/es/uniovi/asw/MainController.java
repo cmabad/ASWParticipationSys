@@ -102,7 +102,7 @@ public class MainController {
     	VoteDao.InsertVotesProp(Integer.parseInt(id), loggedUser.getId(), 1);
     	request.addAttribute("id", loggedUser.getId());
     	request.addAttribute("password", loggedUser.getPassword());
-    	KafkaProducer.send("votedProposal", id);
+    	KafkaProducer.send("votedProposal", id+":"+loggedUser.getId()+":"+1);
     	return "redirect:../showAddProposals";
     }
     
@@ -112,7 +112,7 @@ public class MainController {
     	VoteDao.InsertVotesProp(Integer.parseInt(id),  loggedUser.getId(), 0);
     	request.addAttribute("id", loggedUser.getId());
     	request.addAttribute("password", loggedUser.getPassword());
-    	KafkaProducer.send("votedProposal", id);
+    	KafkaProducer.send("votedProposal", id+":"+loggedUser.getId()+":"+0);
     	return "redirect:../showAddProposals";
     }
     
@@ -125,7 +125,7 @@ public class MainController {
 		request.addAttribute("password", loggedUser.getPassword());
     	try{
     		ProposalDao.save(prp);
-    		KafkaProducer.send("createdProposal", String.valueOf(proposal.getId()));
+    		KafkaProducer.send("createdProposal", String.valueOf(prp.getId()) + ":" + loggedUser.getId());
     		return "redirect:showAddProposals";
     		//return new ModelAndView("showAddProposals");
     	} catch(IllegalArgumentException e){
@@ -144,7 +144,7 @@ public class MainController {
     	Comment com = new Comment(loggedUser,ProposalDao.GetProposalByID(Integer.parseInt(proposalID)), text);
     	try{
     		CommentDao.save(com);
-    		KafkaProducer.send("createdComment", String.valueOf(comment.getId()));
+    		KafkaProducer.send("createdComment", String.valueOf(com.getId()) + ":" + loggedUser.getId());
     		return "redirect:/commentProposal/" + proposalID;
     	} catch(IllegalArgumentException illegalWord){
     		request.addAttribute("error", "You've written an invalid word: " + illegalWord.getMessage().split(":")[1]);
@@ -158,7 +158,7 @@ public class MainController {
     	VoteDao.InsertVotesCom(Integer.parseInt(idComment),  loggedUser.getId(), 1);
     	request.addAttribute("id", loggedUser.getId());
     	request.addAttribute("password", loggedUser.getPassword());
-    	KafkaProducer.send("votedComment", idComment);
+    	KafkaProducer.send("votedComment", idComment+":"+loggedUser.getId()+":"+1);
     	return "showAddProposals";
     }
     
@@ -168,7 +168,7 @@ public class MainController {
     	VoteDao.InsertVotesCom(Integer.parseInt(idComment),  loggedUser.getId(), 0);
     	request.addAttribute("id", loggedUser.getId());
     	request.addAttribute("password", loggedUser.getPassword());
-    	KafkaProducer.send("votedComment", idComment);
+    	KafkaProducer.send("votedComment", idComment+":"+loggedUser.getId()+":"+0);
     	return "showAddProposals";
     }
     
