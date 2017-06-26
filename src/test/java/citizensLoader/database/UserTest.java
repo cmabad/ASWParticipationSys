@@ -1,9 +1,11 @@
 package citizensLoader.database;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import java.text.ParseException;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import es.uniovi.asw.dao.UserDao;
@@ -40,15 +42,33 @@ public class UserTest {
 		assertEquals(dniFound3, dniUser3);
 	}
 	
+	
+	private User user;
+
+	@Before
+	public void setUp() throws Exception {
+		user = new User();
+	}
+
 	@Test
-	public void getUserByIdTest() throws ParseException {
+	public void test() throws ParseException {
+		assertNotNull(user);
 
-		User user = new User("pepe", "fernandez", "pepe@uniovi.es", "27-06-1995", "Oviedo", "Español", 987654);
+		user.setName("userName");
+		assertEquals("userName", user.getName());
 
-		user.setPassword("01234");
-		user.setGender(true);
+
+		user.setId(111222);
+		assertEquals(111222, user.getId());
+
+		user.setEmail("email");
+		assertEquals("email", user.getEmail());
+
+
+		user.setDOB("27-06-1995");
+		assertEquals("27-06-1995", user.getDOB());
+
+		assertEquals("User [id=111222, name=userName, email=email, gender=Female]", user.toString());
 		
-		User found = userdao.getUserByID(987654);
-		assertEquals(user, found);
 	}
 }

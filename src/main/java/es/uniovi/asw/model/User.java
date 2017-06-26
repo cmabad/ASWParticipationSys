@@ -43,6 +43,14 @@ public class User {
 		return id;
 	}
 
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setLName(String lName) {
+		LName = lName;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -116,6 +124,12 @@ public class User {
 		Address = address;
 	}
 	
+	
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", email=" + email + ", gender=" + (gender ? "Male" : "Female") + "]";

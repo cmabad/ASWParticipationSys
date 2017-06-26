@@ -49,7 +49,7 @@ public class ReadList {
 		 
 		 rows = sheet.getPhysicalNumberOfRows();
 		 
-		 for(int i= 1; i<rows; i++){
+		 for(int i= 0; i<rows; i++){
 			 Row row = sheet.getRow(i);
 			 User us = userFromRow(row);
 			 if(us != null)
