@@ -8,10 +8,10 @@ import java.text.ParseException;
 import org.junit.Before;
 import org.junit.Test;
 
-import es.uniovi.asw.dao.CommentDao;
 import es.uniovi.asw.model.Comment;
 import es.uniovi.asw.model.Proposal;
 import es.uniovi.asw.model.User;
+import es.uniovi.asw.participationSystem.dao.CommentDao;
 
 public class SaveCommentTest {
 

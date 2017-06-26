@@ -1,12 +1,12 @@
 package es.uniovi.asw.menus;
 
-import es.uniovi.asw.dao.CommentDao;
-import es.uniovi.asw.dao.ProposalDao;
-import es.uniovi.asw.dao.VoteDao;
 import es.uniovi.asw.model.Comment;
 import es.uniovi.asw.model.Proposal;
 import es.uniovi.asw.model.User;
 import es.uniovi.asw.model.filtrable.Filtrable;
+import es.uniovi.asw.participationSystem.dao.CommentDao;
+import es.uniovi.asw.participationSystem.dao.ProposalDao;
+import es.uniovi.asw.participationSystem.dao.VoteDao;
 
 public class CommentMenu extends AbstractMenu{
 

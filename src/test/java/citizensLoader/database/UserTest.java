@@ -8,8 +8,8 @@ import java.text.ParseException;
 import org.junit.Before;
 import org.junit.Test;
 
-import es.uniovi.asw.dao.UserDao;
 import es.uniovi.asw.model.User;
+import es.uniovi.asw.participationSystem.dao.UserDao;
 
 public class UserTest {
 	

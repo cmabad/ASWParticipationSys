@@ -1,4 +1,4 @@
-package es.uniovi.asw.dao;
+package es.uniovi.asw.participationSystem.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import es.uniovi.asw.PropReader;
-import es.uniovi.asw.kafka.KafkaProducer;
 import es.uniovi.asw.model.Proposal;
+import es.uniovi.asw.participationSystem.kafka.KafkaProducer;
 
 public class ProposalDao {
 	private static Connection conn;

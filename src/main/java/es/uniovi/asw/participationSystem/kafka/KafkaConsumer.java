@@ -1,4 +1,4 @@
-package es.uniovi.asw.kafka;
+package es.uniovi.asw.participationSystem.kafka;
 
 import java.util.Arrays;
 import java.util.Properties;
@@ -6,7 +6,7 @@ import java.util.Properties;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 
-import es.uniovi.asw.dao.ProposalDao;
+import es.uniovi.asw.participationSystem.dao.ProposalDao;
 
 public class KafkaConsumer {
 	private static org.apache.kafka.clients.consumer.KafkaConsumer<String, String> kfc;

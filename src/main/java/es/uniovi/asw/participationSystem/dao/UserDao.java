@@ -1,4 +1,4 @@
-package es.uniovi.asw.dao;
+package es.uniovi.asw.participationSystem.dao;
 
 import java.io.BufferedWriter;
 import java.io.File;

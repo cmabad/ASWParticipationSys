@@ -1,4 +1,4 @@
-package es.uniovi.asw.dao;
+package es.uniovi.asw.participationSystem.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -8,13 +8,13 @@ import org.junit.Before;
 import org.junit.Test;
 
 import es.uniovi.asw.PropReader;
-import es.uniovi.asw.dao.CommentDao;
-import es.uniovi.asw.dao.ProposalDao;
-import es.uniovi.asw.dao.UserDao;
-import es.uniovi.asw.dao.VoteDao;
 import es.uniovi.asw.model.Comment;
 import es.uniovi.asw.model.Proposal;
 import es.uniovi.asw.model.User;
+import es.uniovi.asw.participationSystem.dao.CommentDao;
+import es.uniovi.asw.participationSystem.dao.ProposalDao;
+import es.uniovi.asw.participationSystem.dao.UserDao;
+import es.uniovi.asw.participationSystem.dao.VoteDao;
 public class TestPls {
 	private static User currUser;
 	private Proposal proposal = new Proposal(currUser, "Testing", "TestCategory", "TestText");

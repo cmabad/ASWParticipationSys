@@ -1,4 +1,4 @@
-package es.uniovi.asw;
+package es.uniovi.asw.participationSystem;
 
 
 import java.util.List;
@@ -15,15 +15,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-
-import es.uniovi.asw.dao.CommentDao;
-import es.uniovi.asw.dao.ProposalDao;
-import es.uniovi.asw.dao.UserDao;
-import es.uniovi.asw.dao.VoteDao;
-import es.uniovi.asw.kafka.KafkaProducer;
+import es.uniovi.asw.Message;
 import es.uniovi.asw.model.Comment;
 import es.uniovi.asw.model.Proposal;
 import es.uniovi.asw.model.User;
+import es.uniovi.asw.participationSystem.dao.CommentDao;
+import es.uniovi.asw.participationSystem.dao.ProposalDao;
+import es.uniovi.asw.participationSystem.dao.UserDao;
+import es.uniovi.asw.participationSystem.dao.VoteDao;
+import es.uniovi.asw.participationSystem.kafka.KafkaProducer;
 @Controller
 public class MainController {
 	private User loggedUser;

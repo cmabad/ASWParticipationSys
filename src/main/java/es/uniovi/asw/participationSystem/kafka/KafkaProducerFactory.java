@@ -1,4 +1,4 @@
-package es.uniovi.asw.kafka;
+package es.uniovi.asw.participationSystem.kafka;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
