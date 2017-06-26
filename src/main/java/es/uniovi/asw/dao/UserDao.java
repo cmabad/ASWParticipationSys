@@ -134,8 +134,10 @@ public class UserDao {
 			pstmt.setString(3, user.getEmail());
 			pstmt.setString(4, user.getDOB());
 			pstmt.setString(5, user.getAddress());
+			pstmt.setString(6,  user.getNationality());
 			pstmt.setInt(7, user.getId());
 			pstmt.setString(8, user.getPassword());
+			pstmt.setBoolean(9, user.isGender());
 
 			pstmt.executeUpdate();
 
